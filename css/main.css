@@ -126,7 +126,7 @@ table {
 .nameofmenudish {
   font-size: 18px;
   font-weight: bold;
-}ß
+}
 
 /* Navbar */
 /* The z-index is set to be super safe at 9999 so that the different elements never cover it when in mobile mode */
