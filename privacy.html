@@ -12,117 +12,94 @@
   <link rel="stylesheet" href="css/main.css">
 
 </head>
-
-<body>
-  <div class="nav" role="navigation">
-    <input type="checkbox" id="nav-check">
-    <div class="nav-header">
-      <div class="nav-title">
-        The Haukai Restaurant
-      </div>
-    </div>
-    <div class="nav-btn">
-      <label for="nav-check">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
-    </div>
-
-    <div class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="reservation.html">Reservations</a>
-      <a href="menu.html">Menu</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </div>
-  </div>
-
-
-
-  <section>
-    <div class="container" role="privacy statement documentation">
-      <h2 class="text-center">Privacy Statement</h2>
-      <div class="split">
-        <div>
-          <p>We collect personal information from you, including information about your:</p>
-          <li>Name</li>
-          <li>Contact information</li>
-          <!-- The p next is intentional to leave enough space to make it look the way I wanted -->
-          <p></p>
-          <p>
-            We collect your personal information in order to:
-          </p>
-          <li>
-            Make table reservations
-          </li>
-          <!-- The p next is intentional to leave enough space to make it look the way I wanted -->
-          <p></p>
-          <p>Providing some information is optional. If you choose not to enter contact and booking information, we'll
-            be unable to make a table reservation.
-            We keep your information safe by storing the files via encrypted data storage and only trained staff have
-            access to it.</p>
-          <p>
-            We keep your information for one year at which point we securely destroy it by securely deleting all data.
-            You have the right to ask for a copy of any personal information we hold about you, and to ask for it to be
-            corrected if you think it is wrong.
-          </p>
-          <p>
-            If you'd like to ask for a copy of your information, or to have it corrected, please contact us at
-            privacy@thehaukai.co.nz,
-            or +64-94014019, or 1 Island Street, KeriKeri, Bay of Islands.
-          </p>
-
+  <body>
+    <div class="nav">
+      <input type="checkbox" id="nav-check">
+      <div class="nav-header">
+        <div class="nav-title">
+          The Haukai Restaurant
         </div>
       </div>
-    </div>
-  </section>
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
 
-
-
-  <section class="footer" role="navigation">
-    <ul class="list">
-      <li>
+      <div class="nav-links">
         <a href="index.html">Home</a>
-      </li>
-      <li>
         <a href="reservation.html">Reservation</a>
-      </li>
-      <li>
         <a href="menu.html">Menu</a>
-      </li>
-      <li>
         <a href="about.html">About</a>
-      </li>
-      <li>
         <a href="contact.html">Contact</a>
-      </li>
-      <li>
-        <a href="privacy.html">Privacy Statement</a>
-      </li>
-    </ul>
-    <p class="copyright">Ⓒ 2022 - The Haukai Restaurant</p>
-  </section>
+      </div>
+    </div>
 
-</body>
-<script>
-  const body = document.querySelector("body");
-  const navbar = document.querySelector(".navbar");
-  const menuBtn = document.querySelector(".menu-btn");
-  const cancelBtn = document.querySelector(".cancel-btn");
-  menuBtn.onclick = () => {
-    navbar.classList.add("show");
-    menuBtn.classList.add("hide");
-    body.classList.add("disabled");
-  }
-  cancelBtn.onclick = () => {
-    body.classList.remove("disabled");
-    navbar.classList.remove("show");
-    menuBtn.classList.remove("hide");
-  }
-  window.onscroll = () => {
-    this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
-  }
-</script>
+
+    <section>
+      <div class="container" role="privacy statement documentation">
+        <h2 class="text-center">Privacy Statement</h2>
+        <div class="split">
+          <div>
+            <p>We collect personal information from you, including information about your:</p>
+            <li>Name</li>
+            <li>Contact information</li>
+            <!-- The p next is intentional to leave enough space to make it look the way I wanted -->
+            <p></p>
+            <p>
+              We collect your personal information in order to:
+            </p>
+            <li>
+              Make table reservations
+            </li>
+            <!-- The p next is intentional to leave enough space to make it look the way I wanted -->
+            <p></p>
+            <p>Providing some information is optional. If you choose not to enter contact and booking information, we'll
+              be unable to make a table reservation.
+              We keep your information safe by storing the files via encrypted data storage and only trained staff have
+              access to it.</p>
+            <p>
+              We keep your information for one year at which point we securely destroy it by securely deleting all data.
+              You have the right to ask for a copy of any personal information we hold about you, and to ask for it to
+              be
+              corrected if you think it is wrong.
+            </p>
+            <p>
+              If you'd like to ask for a copy of your information, or to have it corrected, please contact us at
+              privacy@thehaukai.co.nz,
+              or +64-94014019, or 1 Island Street, KeriKeri, Bay of Islands.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="footer" role="navigation">
+      <ul class="list">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="reservation.html">Reservation</a>
+        </li>
+        <li>
+          <a href="menu.html">Menu</a>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+        <li>
+          <a href="privacy.html">Privacy Statement</a>
+        </li>
+      </ul>
+      <p class="copyright">Ⓒ 2022 - The Haukai Restaurant</p>
+    </section>
+
+  </body>
 
 </html>
